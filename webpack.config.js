@@ -6,8 +6,7 @@ export default {
   entry: './src/index.tsx',
   output: {
     path: resolve('dist'),
-    filename: 'index.js',
-    publicPath: '/'
+    filename: 'index.js'
   },
   devServer: {
     historyApiFallback: true,
