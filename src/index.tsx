@@ -1,5 +1,5 @@
 import { render } from 'react-dom'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { HashRouter, Routes, Route } from 'react-router-dom'
 import 'bootstrap'
 import App from './components/App'
 import Section from './components/Section'
@@ -11,7 +11,7 @@ import AddNew from './views/AddNew'
 import './styles.sass'
 
 render((
-  <BrowserRouter>
+  <HashRouter>
     <Routes>
       <Route path='/' element={<App />}>
         <Route path='products' element={<Section />}>
@@ -27,5 +27,5 @@ render((
         </Route>
       </Route>
     </Routes>
-  </BrowserRouter>
+  </HashRouter>
 ), document.getElementById('root'))
