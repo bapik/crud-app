@@ -8,6 +8,7 @@ import ProductList from './views/ProductList'
 import Product from './views/Product'
 import Category from './views/Category'
 import AddNew from './views/AddNew'
+import Home from './views/Home'
 import './styles.sass'
 
 render((
@@ -25,6 +26,7 @@ render((
         <Route path='add' element={<Section />}>
           <Route index element={<AddNew />} />
         </Route>
+        <Route index element={<Home />} />
       </Route>
     </Routes>
   </HashRouter>
